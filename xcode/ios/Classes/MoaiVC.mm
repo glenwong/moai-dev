@@ -48,7 +48,7 @@
                 "Supported Device Orientations"
          */
         
-        if (( interfaceOrientation == UIInterfaceOrientationPortrait ) || ( interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown )) {
+        if (( interfaceOrientation == UIInterfaceOrientationLandscapeLeft ) || ( interfaceOrientation == UIInterfaceOrientationLandscapeRight )) {
             return true;
         }
         

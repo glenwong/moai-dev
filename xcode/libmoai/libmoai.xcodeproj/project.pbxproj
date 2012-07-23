@@ -3391,6 +3391,8 @@
 		E9CA1E5B151C8578005F39B7 /* MOAIWebViewIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9CA1E59151C8578005F39B7 /* MOAIWebViewIOS.mm */; };
 		E9DE4581157EA38800630A7D /* MOAIMoviePlayerIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DE457F157EA38800630A7D /* MOAIMoviePlayerIOS.h */; };
 		E9DE4582157EA38800630A7D /* MOAIMoviePlayerIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9DE4580157EA38800630A7D /* MOAIMoviePlayerIOS.mm */; };
+		FF88406715B08FFA0019E4C4 /* mp.c in Sources */ = {isa = PBXBuildFile; fileRef = FF88406615B08FFA0019E4C4 /* mp.c */; };
+		FF88406815B08FFA0019E4C4 /* mp.c in Sources */ = {isa = PBXBuildFile; fileRef = FF88406615B08FFA0019E4C4 /* mp.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -5670,6 +5672,7 @@
 		E9CA1E59151C8578005F39B7 /* MOAIWebViewIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MOAIWebViewIOS.mm; path = "moaiext-iphone/MOAIWebViewIOS.mm"; sourceTree = "<group>"; };
 		E9DE457F157EA38800630A7D /* MOAIMoviePlayerIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAIMoviePlayerIOS.h; path = "moaiext-iphone/MOAIMoviePlayerIOS.h"; sourceTree = "<group>"; };
 		E9DE4580157EA38800630A7D /* MOAIMoviePlayerIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MOAIMoviePlayerIOS.mm; path = "moaiext-iphone/MOAIMoviePlayerIOS.mm"; sourceTree = "<group>"; };
+		FF88406615B08FFA0019E4C4 /* mp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mp.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5805,6 +5808,7 @@
 		032409EE13564CAF000ADC60 /* 3rd party */ = {
 			isa = PBXGroup;
 			children = (
+				FF88406515B08FFA0019E4C4 /* msgpack */,
 				66A643AD15462EBF009796A3 /* c-ares-1.7.5 */,
 				0725E2EB14F45AC700551DB5 /* adcolony */,
 				032409EF13564CAF000ADC60 /* box2d */,
@@ -9604,6 +9608,14 @@
 				077D500E1519A4A1003DFC89 /* MOAIRenderMgr.h */,
 			);
 			name = render;
+			sourceTree = "<group>";
+		};
+		FF88406515B08FFA0019E4C4 /* msgpack */ = {
+			isa = PBXGroup;
+			children = (
+				FF88406615B08FFA0019E4C4 /* mp.c */,
+			);
+			path = msgpack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -13549,6 +13561,7 @@
 				CDD06E541398B5A500AB0420 /* AKU-luaext.cpp in Sources */,
 				E9940D6814B7A217006465CC /* lfs.c in Sources */,
 				E9940D6E14B7A414006465CC /* MOAICoroutine.cpp in Sources */,
+				FF88406715B08FFA0019E4C4 /* mp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13574,6 +13587,7 @@
 				CDD06E561398B5A500AB0420 /* AKU-luaext.cpp in Sources */,
 				E9940D6914B7A217006465CC /* lfs.c in Sources */,
 				E9940D6F14B7A414006465CC /* MOAICoroutine.cpp in Sources */,
+				FF88406815B08FFA0019E4C4 /* mp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

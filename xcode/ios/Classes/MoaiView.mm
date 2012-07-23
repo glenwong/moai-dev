@@ -172,6 +172,7 @@ namespace MoaiInputDeviceSensorID {
 		AKUExtLoadLuacurl ();
 		AKUExtLoadLuacrypto ();
 		AKUExtLoadLuasocket ();
+        AKUExtLoadLuamsgpack ();
 		
 		#ifdef USE_UNTZ
 			AKUUntzInit ();

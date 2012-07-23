@@ -10,6 +10,7 @@ extern "C" {
 	extern int luaopen_luacurl			( lua_State *L );
 	extern int luaopen_luasql_sqlite3	( lua_State *L );
 	extern int luapreload_fullluasocket ( lua_State *L );
+	extern int luaopen_msgpack			( lua_State *L );
 }
 
 //================================================================//
@@ -49,4 +50,10 @@ void AKUExtLoadLuasql () {
 
 	lua_State* state = AKUGetLuaState ();
 	luaopen_luasql_sqlite3 ( state );
+}
+
+//----------------------------------------------------------------//
+void AKUExtLoadLuamsgpack () {
+	lua_State* state = AKUGetLuaState();
+	luaopen_msgpack( state );
 }
